@@ -344,7 +344,7 @@ for(i1 in 1:length(shift_vec)){
     
     for(s in 1:R){
       print(s)
-      set.seed(s)
+      
       null= mclapply(beta_vec,function(x) alt_gen3(x,n,shift =shift,B_alt,sigma=sigma), mc.cores = core_num)
       
       res_temp=matrix(,nrow = length(beta_vec),ncol = length(methods))
