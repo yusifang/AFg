@@ -115,7 +115,7 @@ save(AFg.primary_refdistN,  file = paste0("AFg_primaryrefdistN",n,"final.RData")
 
 ### N times
 
-set.seed(15213)
+
 AFg.stat = function(p.values,n) {
   vec=geomSeries(n,1)
   num.study = length(p.values)
